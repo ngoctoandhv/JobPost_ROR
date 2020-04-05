@@ -1,7 +1,7 @@
 <nav class="navbar navbar-inverse">
   <div class="container">
     <div class="navbar-header">
-      <%= link_to 'Tutsplus Devise', root_path, class: 'navbar-brand' %>
+      <%= link_to 'Job', root_path, class: 'navbar-brand' %>
     </div>
     <div id="navbar">
       <ul class="nav navbar-nav">
@@ -11,6 +11,8 @@
         <% if user_signed_in? %>
           <li class="dropdown">
             <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+              <span>Hello </span>
+              <%= current_user.user_name %>
               <span class="caret"></span>
             </a>
             <ul class="dropdown-menu" role="menu">
