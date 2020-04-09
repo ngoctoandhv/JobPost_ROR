@@ -7,6 +7,10 @@ class CreatePostJobs < ActiveRecord::Migration[6.0]
       t.string :post_title
       t.string :job_description
       t.date :job_expried_date
+      t.references :job_location
+      t.references :job_type
+      t.references :job_status
+      t.references :employer
 
       t.timestamps
     end

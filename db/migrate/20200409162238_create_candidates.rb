@@ -6,6 +6,7 @@ class CreateCandidates < ActiveRecord::Migration[6.0]
       t.string :phone
       t.string :avatar
       t.string :cv
+      t.references :user
 
       t.timestamps
     end
