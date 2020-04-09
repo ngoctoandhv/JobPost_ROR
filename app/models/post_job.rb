@@ -1,0 +1,2 @@
+class PostJob < ApplicationRecord
+end
