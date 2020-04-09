@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :employers
   resources :candidates
   devise_for :users
   root 'blog#index'
