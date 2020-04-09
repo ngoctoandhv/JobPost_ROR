@@ -1,0 +1,2 @@
+class ApplyActivity < ApplicationRecord
+end

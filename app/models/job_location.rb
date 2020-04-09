@@ -1,0 +1,2 @@
+class JobLocation < ApplicationRecord
+end
