@@ -14,6 +14,8 @@ class SessionsController < Devise::SessionsController
     #   super
     @user = User.find_by email: params[:user][:email]
     redirect_to :new_user_session if @user.nill?
+    sign_in @user
+    redirect_to @user.user_type.to_sym
   end
 
   # DELETE /resource/sign_out
