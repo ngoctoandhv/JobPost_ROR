@@ -5,7 +5,7 @@ class CreateEmployers < ActiveRecord::Migration[6.0]
       t.string :company_name
       t.string :company_size
       t.string :company_description
-      t.references :user
+      t.references :user, null: false, foreign_key: true
 
       t.timestamps
     end
