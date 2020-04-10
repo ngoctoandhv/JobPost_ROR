@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Company logo:</strong>
+  <%= @employer.company_logo %>
+</p>
+
+<p>
+  <strong>Company name:</strong>
+  <%= @employer.company_name %>
+</p>
+
+<p>
+  <strong>Company size:</strong>
+  <%= @employer.company_size %>
+</p>
+
+<p>
+  <strong>Company description:</strong>
+  <%= @employer.company_description %>
+</p>
+
+<%= link_to 'Edit', edit_employer_path(@employer) %> |
+<%= link_to 'Back', employers_path %>

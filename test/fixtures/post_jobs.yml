@@ -1,0 +1,17 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  post_priority: 1
+  salary_min: 1
+  salary_max: 1
+  post_title: MyString
+  job_description: MyString
+  job_expried_date: 2020-04-09
+
+two:
+  post_priority: 1
+  salary_min: 1
+  salary_max: 1
+  post_title: MyString
+  job_description: MyString
+  job_expried_date: 2020-04-09
