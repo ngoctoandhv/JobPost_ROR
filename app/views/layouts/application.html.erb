@@ -1,23 +1,35 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>JobPost</title>
-    <%= csrf_meta_tags %>
-    <%= csp_meta_tag %>
 
-    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
-  </head>
+<head>
+  <title>JobPost</title>
+  <%= csrf_meta_tags %>
+  <%= csp_meta_tag %>
 
-  <body>
-    <div class="container-fluid">
-      <%= render  "shared/header" %>
+  <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+</head>
+
+<body>
+  <div class="container-fluid">
+    <%= render  "shared/header" %>
+  </div>
+
+  <div class="container">
+
+    <% if flash[:notice] %>
+    <div class="notice global-notification">
+      <%= notice %></p>
     </div>
-      
-    <div class="container">
-      <p class="notice"><%= notice %></p>
-      <p class="alert"><%= alert %></p>
-      <%= yield %>
+    <% end %>
+    <% if flash[:alert] %>
+    <div class="alert global-notification">
+      <%= alert %></p>
     </div>
-  </body>
+    <% end %>
+
+    <%= yield %>
+  </div>
+</body>
+
 </html>
