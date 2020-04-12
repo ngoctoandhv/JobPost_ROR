@@ -1,5 +1,3 @@
-<p id="notice"><%= notice %></p>
-
 <h1>Employers</h1>
 
 <table>
@@ -15,15 +13,15 @@
 
   <tbody>
     <% @employers.each do |employer| %>
-      <tr>
-        <td><%= employer.company_logo %></td>
-        <td><%= employer.company_name %></td>
-        <td><%= employer.company_size %></td>
-        <td><%= employer.company_description %></td>
-        <td><%= link_to 'Show', employer %></td>
-        <td><%= link_to 'Edit', edit_employer_path(employer) %></td>
-        <td><%= link_to 'Destroy', employer, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr>
+    <tr>
+      <td><%= employer.company_logo %></td>
+      <td><%= employer.company_name %></td>
+      <td><%= employer.company_size %></td>
+      <td><%= employer.company_description %></td>
+      <td><%= link_to 'Show', employer %></td>
+      <td><%= link_to 'Edit', edit_employer_path(employer) %></td>
+      <td><%= link_to 'Destroy', employer, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+    </tr>
     <% end %>
   </tbody>
 </table>
