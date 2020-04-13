@@ -13,10 +13,11 @@ class ApplicationController < ActionController::Base
   end
 
   def after_sign_in_path_for(resource)
-    url_for current_object
+    return rails_admin_url if current_user.admin?
+    url_for current_user_type
   end
 
-  def current_object
+  def current_user_type
     user = current_user.user_type
     user.camelize.constantize
   end
