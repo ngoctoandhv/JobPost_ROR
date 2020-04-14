@@ -12,5 +12,5 @@ class User < ApplicationRecord
   # validates :user_type, inclusion: { in: %w[candidate employer admin] }
   enum user_type: { candidate: 1, employer: 2, admin: 3 }
 
-  USER_TYPE = { "Candidate" => "candidate", "Employer" => "employer" }.freeze
+  # USER_TYPE = { "Candidate" => "candidate", "Employer" => "employer" }.freeze
 end
